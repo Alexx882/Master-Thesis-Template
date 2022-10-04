@@ -1,0 +1,95 @@
+\documentclass[11pt,a4paper]{report}
+\usepackage[master]{itecthesis}
+
+% from paper
+\usepackage[linesnumbered, ruled]{algorithm2e}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{subcaption}
+\usepackage{graphicx}
+\graphicspath{{figures/}}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{braket}
+\usepackage[binary-units]{siunitx}
+
+\setlength{\parindent}{0em}
+% \setlength{\parskip}{-.5em}
+
+% from master thesis template
+\usepackage[english]{babel}
+\usepackage{verbatim}
+\usepackage{url}
+\def\UrlBreaks{\do\/\do-}
+\usepackage[hidelinks]{hyperref}
+\usepackage{lmodern}
+\usepackage{blindtext}
+\usepackage{amssymb,enumitem}
+
+% commands
+\newcommand{\onlinerefnote}[0]{[Accessed: July 17, 2021]}
+\newcommand{\enot}[1]{$1\mathrm{e}{#1}$}
+
+
+%%% Title Page Data %%%
+\title{[Thesis Title]}
+\author{[Student name]}
+\eingereichtbei{Univ.-Prof. Dr. Martin Pinzger}
+\finaldate{[July 2021]}
+
+\begin{document}
+
+\maketitle
+
+\input{Affidavit}
+
+\begin{preface}{Acknowledgement}
+I would first like to thank...
+\end{preface}
+
+\begin{abstract}
+
+\end{abstract}
+
+{
+	\setlength{\baselineskip}%
+			{1.5\baselineskip}
+	\afterpreface
+}
+
+{
+	\setlength{\baselineskip}%
+			{1.5\baselineskip}
+	\listoffigures
+	\clearemptydoublepage
+	\listoftables
+	\clearemptydoublepage
+	\listofalgorithms
+	\clearemptydoublepage
+}
+
+%%%%%%%%%% START OF CONTENT %%%%%%%%%% 
+\pagenumbering{arabic}
+
+\chapter{Introduction}
+\section{Motivation}
+\section{Problem statement}
+\section{Research methodology}
+\section{Thesis structure}
+
+\chapter{Background}
+
+\chapter{Methodology}
+
+\chapter{Implementation}
+
+\chapter{Evaluation}
+
+\chapter{Conclusion}
+
+% \clearpage
+% \input{notes/notes}
+
+\bibliography{bibliography}
+\bibliographystyle{ieeetr}
+\end{document}
